@@ -11,10 +11,10 @@
         <ul>
           <li>
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Work</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact Us</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -22,7 +22,7 @@
     <hr />
     <br />
     <!-- about -->
-    <section class="about">
+    <section id="about">
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
@@ -33,18 +33,18 @@
     <hr />
 
     <!-- Work -->
-    <section>
+    <section id="work">
       <h1>Work</h1>
       <iframe src="./12353436_1920_1080_60fps.mp4" frameborder="0"></iframe>
     </section>
     <!-- Resume -->
-    <section>
+    <section id="resume">
       <h1>Resume</h1>
       <iframe src="./devoire 9.docx.pdf" frameborder="0"></iframe>
     </section>
     <hr />
     <!-- Contact -->
-    <section>
+    <section id="contact">
       <h1>Contact Us</h1>
       <div>
         <label for="Name">
@@ -59,9 +59,16 @@
           />
         </label>
         <label for="comment">
-          <textarea name="comment" id="comment"></textarea>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Send us your comment"
+          ></textarea>
         </label>
       </div>
     </section>
+    <footer>
+      <p>Footer CopyRights &copy; 2024</p>
+    </footer>
   </body>
 </html>
