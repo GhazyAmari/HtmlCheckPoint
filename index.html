@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-bar">
         <ul>
           <li>
             <a href="#">Home</a>
@@ -30,7 +31,7 @@
     <hr />
     <br />
     <!-- about -->
-    <section id="about">
+    <section id="about" class="about">
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
@@ -41,12 +42,12 @@
     <hr />
 
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="work">
       <h1>Work</h1>
       <iframe
         src="./12353436_1920_1080_60fps.mp4"
         muted
-        loop
+        looppre
         frameborder="0"
       ></iframe>
     </section>
@@ -59,25 +60,31 @@
     <!-- Contact -->
     <section id="contact">
       <h1>Contact Us</h1>
-      <div>
-        <label for="Name"></label>
-        <input type="text" id="Name" placeholder="enter your name" />
+      <form class="contact">
+        <div class="input-group">
+          <label for="Name"></label>
+          <input type="text" id="Name" placeholder="enter your name" />
+        </div>
 
-        <label for="Email"></label>
-        <input
-          type="email"
-          name="Email"
-          id="Email"
-          placeholder="put your email"
-        />
+        <div class="input-group">
+          <label for="Email"></label>
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            placeholder="put your email"
+          />
+        </div>
 
-        <label for="comment"></label>
-        <textarea
-          name="comment"
-          id="comment"
-          placeholder="Send us your comment"
-        ></textarea>
-      </div>
+        <div class="input-group">
+          <label for="comment"></label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Send us your comment"
+          ></textarea>
+        </div>
+      </form>
     </section>
     <footer>
       <p>Footer CopyRights &copy; 2024</p>
